@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.shikhar.attendancemanager.EditTT"
+    tools:showIn="@layout/activity_edit_tt"
+    android:id="@+id/scrollVertical">
+
+    <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollHorizontal">
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/tbllay"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/tblrmon"
+                >
+
+                <TextView
+                    android:text="@string/Monday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backrec"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="30dp"
+                    android:paddingTop="30dp"
+                    android:layout_column="1"
+                    android:id="@+id/tvmon"/>
+
+                <Button
+                    android:layout_height="80dp"
+                    android:layout_width="100dp"
+                    android:text="@string/plus"
+                    android:layout_column="2"
+                    android:onClick="set_tt"
+                    android:id="@+id/monplus"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/tblrtue"
+                >
+
+                <TextView
+                    android:id="@+id/tvtue"
+                    android:text="@string/Tuesday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backrec"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="30dp"
+                    android:paddingTop="30dp"
+                    android:layout_column="1" />
+
+                <Button
+                    android:layout_height="80dp"
+                    android:layout_width="100dp"
+                    android:text="@string/plus"
+                    android:layout_column="2"
+                    android:onClick="set_tt"
+                    android:id="@+id/tueplus"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/tblrwed"
+                >
+
+                <TextView
+                    android:id="@+id/tvwed"
+                    android:text="@string/Wednesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backrec"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="30dp"
+                    android:paddingTop="30dp"
+                    android:layout_column="1" />
+
+                <Button
+                    android:layout_height="80dp"
+                    android:layout_width="100dp"
+                    android:text="@string/plus"
+                    android:layout_column="2"
+                    android:onClick="set_tt"
+                    android:id="@+id/wedplus"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/tblrthu"
+                >
+
+                <TextView
+                    android:id="@+id/tvthu"
+                    android:text="@string/Thursday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backrec"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="30dp"
+                    android:paddingTop="30dp"
+                    android:layout_column="1" />
+
+                <Button
+                    android:layout_height="80dp"
+                    android:layout_width="70dp"
+                    android:text="@string/plus"
+                    android:layout_column="2"
+                    android:onClick="set_tt"
+                    android:id="@+id/thuplus"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/tblrfri"
+                >
+
+                <TextView
+                    android:id="@+id/tvfri"
+                    android:text="@string/Friday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backrec"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="30dp"
+                    android:paddingTop="30dp"
+                    android:layout_column="1" />
+
+                <Button
+                    android:layout_height="80dp"
+                    android:layout_width="100dp"
+                    android:text="@string/plus"
+                    android:layout_column="2"
+                    android:onClick="set_tt"
+                    android:id="@+id/friplus"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/tblrsat"
+                >
+
+                <TextView
+                    android:id="@+id/tvsat"
+                    android:text="@string/Saturday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backrec"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="30dp"
+                    android:paddingTop="30dp"
+                    android:layout_column="1" />
+
+                <Button
+                    android:layout_height="80dp"
+                    android:layout_width="100dp"
+                    android:text="@string/plus"
+                    android:layout_column="2"
+                    android:onClick="set_tt"
+                    android:id="@+id/satplus"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/tblrsun"
+                >
+
+                <TextView
+                    android:id="@+id/tvsun"
+                    android:text="@string/Sunday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backrec"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="30dp"
+                    android:paddingTop="30dp"
+                    android:layout_column="1" />
+
+                <Button
+                    android:layout_height="80dp"
+                    android:layout_width="100dp"
+                    android:text="@string/plus"
+                    android:layout_column="2"
+                    android:onClick="set_tt"
+                    android:id="@+id/sunplus"
+                    />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </HorizontalScrollView>
+
+</ScrollView>
